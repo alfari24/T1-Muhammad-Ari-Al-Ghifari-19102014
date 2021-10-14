@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<body>
+ <h2>Formulir Pendaftaran </h2>
+
+ <form action="/action_page.php">
+	
+	<label for="site-search">Search the site:</label><br>
+	<input type="search" id="site-search" name="q"aria-label="Search through site content"><br>
+
+	<button>Search</button><br>
+ 
+ 
+	<label for="fname">Nama Depan:</label><br>
+	<input type="text" id="fname" name="fname" value="Muhammad"><br>
+	
+	<label for="lname">Nama Belakang:</label><br>
+	<input type="text" id="lname" name="lname"><br>
+	<input type="hidden" id="custId" name="custId" value="3487">
+ 
+	<label for="lname">Tempat Lahir:</label><br>
+	<input type="text" id="lname" name="ldata" value="None" required><br>
+ 
+	<label for="lname">Umur:</label><br>
+	<input type="number" id="lname" name="lage" required><br>
+	
+	<label for="homepage">Blog:</label><br>
+	<input type="url" id="homepage" name="homepage" value="https:\\"><br>
+ 
+	<label for="email">Email:</label><br>
+	<input type="email" id="email" name="email"><br>
+	
+	<label for="phone">Masukan Nomor HP:</label><br>
+	<input type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br>
+	<small>Format: 123-45-678</small><br>
+
+	<label for="pwd">Password:</label><br>
+	<input type="password" id="pwd" name="pwd" minlength="8"><br><br>
+
+ 
+	<label for="lname">Pilih Job :</label><br>
+	<select id="kelas" name="kelas">
+		<option value="ti">Telnologi Informasi</option>
+		<option value="mm">Multimedia</option>
+		<option value="sc">Sistem Cerdas</option>
+	</select><br>
+ 
+	<label for="lname">Nomor Antrian :</label><br>
+	<select name="kelas" size="4" multiple>
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+	</select><br>
+	
+	<label for = "lname">Hobi :</label><br>
+	<input type="checkbox" id="makan" name="hobi" value="makan">
+		<label for="makan">Makan</label><br>
+	<input type="checkbox" id="bernapas" name="hobi" value="bernapas">
+		<label for="bernapas">Bernapas</label><br>
+	<input type="checkbox" id="Berlari" name="hobi" value="berlari">
+		<label for="berlari">Berlari</label><br>
+	<input type="checkbox" id="Tidur" name="hobi" value="tidur">
+		<label for="tidur">Tidur</label><br>
+	</select><br>
+	
+	<label for="favcolor">Warna:</label><br>
+	 <input type="color" id="favcolor" name="favcolor"><br>
+ 
+ 
+	 <label for="lname">Pilih Jenis Kelamin :</label><br>
+	 <input type="radio" id="male" name="gender" value="male">
+	 <label for="male">Laki - Laki</label><br>
+	 <input type="radio" id="perempuan" name="gender" value="perempuan">
+	 <label for="perempuan">Perempuan</label><br>
+	 <input type="radio" id="perempuan" name="gender" value="perempuan">
+	 <label for="nothing">tidak bersedia menjawab</label><br>
+	 <input type="radio" id="other" name="gender" value="other">
+	 <label for="other">Lainnya</label><br>
+	 
+	 <label for="lname">Keluhan :</label><br>
+<textarea name="message" rows="10" cols="30">
+saya sangat susah dalam menjadwal tugas tugas yang diberikan
+	 </textarea><br>
+	 <label for="vol">Seberapa suka dengan pembelajaran:</label><br>
+  <input type="range" id="vol" name="vol" min="0" max="100"><br>
+	 
+	 <label for="birthday">Tanggal Lahir:</label><br>
+	 <input type="date" id="birthday" name="birthday"><br>
+	 
+	 <label for="week">Pilih Minggu:</label><br>
+     <input type="week" id="week" name="week"><br>
+	 
+	 <label for="appt">Pilih waktu kerja:</label><br>
+	 <input type="time" id="appt" name="appt" min="09:00" max="18:00" required><br>
+	 <small>jam kerja mulai 09:00 sampai 18:00</small><br>
+
+	 
+	 <label for="start">Tanggal Menikah:</label><br>
+	 <input type="month" id="start" name="start" min="2021-03" value="2021-05"><br>
+
+	 <label for="myfile">Kirim File Lamaran:</label><br>
+	 <input type="file" id="myfile" name="myfile">
+	 <input type="reset" value="Reset"><br><br>
+	<input type="image" src="img/submit.png" alt="Submit" width="96" height="28">
+ </form>
+ <p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+</body>
+</html>
