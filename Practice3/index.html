@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+  text-decoration: none;
+}
+
+html {
+  font-family: Poppins;
+  
+  background: #00A19D;
+  
+}
+
+.header {
+  background-color: #E05D5D;
+  color: #FFF8E5;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+.a {
+  text-decoration: none;
+}
+.menu li {
+  padding: 12px;
+  margin-bottom: 9px;
+  background-color: #E05D5D;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #ffffff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.menu li:hover {
+  background-color: #0099cc;
+  text-decoration: none;
+}
+
+.aside {
+  background-color: #E05D5D;
+  padding: 15px;
+  border-radius: 8px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.footer {
+  background-color: #FFB344;
+  color: #ffffff;
+  text-align: center;
+  font-size: 15px;
+  padding: 15px;
+  border-radius: 8px;
+}
+.body-text{
+  color: #ffffff;
+
+}
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
+
+/* Create four equal columns that sits next to each other */
+.columns {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.columns img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .columns {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .columns {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h2><center>Alfari</center></h2>
+  <h7><center>Hi, i'm Muhammad Ari Al Ghifari a student from IT Telkom</center></h7>
+</div>
+
+<div class="row">
+  <div class="col-3 col-s-3 menu">
+    <ul>
+	  <a href="/practice3/border-radius.html"><li>Border Radius</li></a>
+	  <a href="/practice3/border-image.html"><li>Border image</li></a>
+      <a href="/practice3/inline.html"><li>Inline Style</li></a>
+      <a href="/practice3/ruleorder.html"><li>Rule Order</li></a>
+      <a href="/practice3/selector.html"><li>Selector</li></a>
+      <a href="/practice3/gradient.html"><li>Gradient</li></a>
+      <a href="/practice3/colors.html"><li>Color</li></a>
+	  <a href="/practice3/multiple-backgrounds.html"><li>multiple background</li></a>
+      <a href="/practice3/text.html"><li>Text</li></a>
+	  <a href="/practice3/2d-transform.html"><li>2D Transform</li></a>
+	  <a href="/practice3/variable.html"><li>variable</li></a>
+	  <a href="/practice3/box-shadow.html"><li>Box Shadow</li></a>
+	  <a href="/practice3/ubahposisi.html"><li>Change Position</li></a>
+	  <a href="/practice3/transition.html"><li>Transition</li></a>
+	  <a href="/practice3/tooltip.html"><li>Tooltip</li></a>
+	  <a href="/practice3/text.html"><li>text</li></a>
+	  <a href="/practice3/responsive-image.html"><li>Responsive Image</li></a>
+	  <a href="/practice3/resize.html"><li>Rezize Image</li></a>
+	  <a href="/practice3/pagination.html"><li>Pagination</li></a>
+	  <a href="/practice3/multiple-coloumns.html"><li>Multiple Coloums</li></a>
+	  <a href="/practice3/media-query-image.html"><li>Media Query Image</li></a>
+	  <a href="/practice3/media-query.html"><li>Media Query</li></a>
+	  <a href="/practice3/cermin.html"><li>Cermin</li></a>
+	  <a href="/practice3/button.html"><li>Button</li></a>
+	  <a href="/practice3/border-radius.html"><li>border-radius</li></a>
+	  <a href="/practice3/border-image.html"><li>border-image</li></a>
+	  <a href="/practice3/animation.html"><li>animation</li></a>
+	  
+    </ul>
+  </div>
+
+  <div class="col-6 col-s-9">
+	<div class="body-text">
+    <h1><center>Hello Work</center></h1>
+	<!-- Photo Grid -->
+		<img src="/practice3/media/carl-heyerdahl-KE0nC8-58MQ-unsplash.jpg" style="width:70%">
+	</div>
+  </div>
+
+  <div class="col-3 col-s-12">
+    <div class="aside">
+      <h2>Portofolio</h2>
+      <p>Chania is a city on the island of Crete.</p>
+    </div></br>
+	<div class="aside">
+      <h2>What?</h2>
+      <p>Chania is a city on the island of Crete.</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <p>© 2021 | Alfari</p>
+</div>
+
+</body>
+</html>
+
+
