@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#grad1 {
+  height: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(blue, red);
+}
+#grad2 {
+  height: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right, red , blue);
+}
+#grad3 {
+  height: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to bottom right, red, blue);
+}
+#grad4 {
+  height: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(red, yellow, green);
+}
+
+#grad5 {
+  height: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(red, orange, yellow, green, blue, indigo, violet);
+}
+
+#grad6 {
+  height: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(red 10%, green 85%, blue 90%);
+}
+</style>
+</head>
+<body>
+
+<h1>Linear Gradient - Top to Bottom</h1>
+<div id="grad1"></div>
+<h1>Linear Gradient - Left to Right</h1>
+<div id="grad2"></div>
+<h1>Linear Gradient - Diagonal</h1>
+<div id="grad3"></div>
+<h2>3 Color Stops (evenly spaced):</h2>
+<div id="grad4"></div>
+<h2>7 Color Stops (evenly spaced):</h2>
+<div id="grad5"></div>
+<h2>3 Color Stops (not evenly spaced):</h2>
+<div id="grad6"></div>
+</body>
+</html>
+
+

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+</style>
+<body>
+
+<!-- Header -->
+<div class="header">
+  <h1>Responsive Image Grid</h1>
+  <p>Resize the browser window to see the responsive effect.</p>
+</div>
+
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <img src="/practice3/media/adam-miller-dBaz0xhCkPY-unsplash.jpg" style="width:100%">
+    <img src="/practice3/media/anton-van-der-weijst-a4eax-dOpkk-unsplash.jpg" style="width:100%">
+    <img src="/practice3/media/carl-heyerdahl-KE0nC8-58MQ-unsplash.jpg" style="width:100%">
+    <img src="/practice3/media/dan-gold-P_0R02ArdLE-unsplash.jpg" style="width:100%">
+    <img src="/practice3/media/anastase-maragos-ghC8y8PF-ok-unsplash.jpg" style="width:100%">
+    <img src="/practice3/media/austin-chan-ukzHlkoz1IE-unsplash.jpg" style="width:100%">
+    <img src="/practice3/media/carson-arias-7Z03R1wOdmI-unsplash.jpg" style="width:100%">
+  </div>
+  
+  <div class="column">
+    <img src="/practice3/media/adam-miller-dBaz0xhCkPY-unsplash.jpg" style="width:100%">
+    <img src="/practice3/media/anton-van-der-weijst-a4eax-dOpkk-unsplash.jpg" style="width:100%">
+    <img src="/practice3/media/carl-heyerdahl-KE0nC8-58MQ-unsplash.jpg" style="width:100%">
+    <img src="/practice3/media/dan-gold-P_0R02ArdLE-unsplash.jpg" style="width:100%">
+    <img src="/practice3/media/anastase-maragos-ghC8y8PF-ok-unsplash.jpg" style="width:100%">
+    <img src="/practice3/media/austin-chan-ukzHlkoz1IE-unsplash.jpg" style="width:100%">
+    <img src="/practice3/media/carson-arias-7Z03R1wOdmI-unsplash.jpg" style="width:100%">
+  </div>
+  
+  <div class="column">
+    <img src="/practice3/media/adam-miller-dBaz0xhCkPY-unsplash.jpg" style="width:100%">
+    <img src="/practice3/media/anton-van-der-weijst-a4eax-dOpkk-unsplash.jpg" style="width:100%">
+    <img src="/practice3/media/carl-heyerdahl-KE0nC8-58MQ-unsplash.jpg" style="width:100%">
+    <img src="/practice3/media/dan-gold-P_0R02ArdLE-unsplash.jpg" style="width:100%">
+    <img src="/practice3/media/anastase-maragos-ghC8y8PF-ok-unsplash.jpg" style="width:100%">
+    <img src="/practice3/media/austin-chan-ukzHlkoz1IE-unsplash.jpg" style="width:100%">
+    <img src="/practice3/media/carson-arias-7Z03R1wOdmI-unsplash.jpg" style="width:100%">
+  </div>
+  
+  <div class="column">
+    <img src="/practice3/media/adam-miller-dBaz0xhCkPY-unsplash.jpg" style="width:100%">
+    <img src="/practice3/media/anton-van-der-weijst-a4eax-dOpkk-unsplash.jpg" style="width:100%">
+    <img src="/practice3/media/carl-heyerdahl-KE0nC8-58MQ-unsplash.jpg" style="width:100%">
+    <img src="/practice3/media/dan-gold-P_0R02ArdLE-unsplash.jpg" style="width:100%">
+    <img src="/practice3/media/anastase-maragos-ghC8y8PF-ok-unsplash.jpg" style="width:100%">
+    <img src="/practice3/media/austin-chan-ukzHlkoz1IE-unsplash.jpg" style="width:100%">
+    <img src="/practice3/media/carson-arias-7Z03R1wOdmI-unsplash.jpg" style="width:100%">
+  </div>
+</div>
+
+
+</body>
+</html>
+
+
