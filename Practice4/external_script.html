@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>test</title>
+	</head>
+	<body>
+		<label>rumus luas segitiga</label><br>
+		<input id="tinggi" type="number" placeholder="masukan tinggi" /><br>
+		<input id="alas" type="number" placeholder="masukan alas" /><br>
+		<button id="hitung">hitung</button>
+		<label>hasil : </label><label id="hasil">0</label><br>
+		<br><br>
+		
+		<label>konversi nilai ke hruf</label><br>
+		<input class="nilai_angka" type="number" placeholder="masukan nilai angka" /><br>
+		<button onclick="konversi()">konversi</button><br>
+		<label> nilai huruf: </label><label id="hasil2">-</label><br>
+		<br>
+		<br>
+		<label> Daftar Belanja</label><br>
+		<input id="nama_barang" type="text" placeholder="Nama Barang"/>
+		<input type="number" onkeyup="hitung_total()" id="jumlah" placeholder="Jumlah"/>
+		<input type="number" onkeyup="hitung_total()" id="harga" placeholder="Harga"/>
+		<input type="number" readonly placeholder="Total" id="total">
+		<button onclick="cetak()">Cetak</button><br>
+
+        <script src="js/script1.js"></script>
+	</body>
+</html>
+
