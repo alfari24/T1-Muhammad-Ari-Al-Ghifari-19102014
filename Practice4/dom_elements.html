@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript HTML DOM</h2>
+
+<p id="intro"> HTML Elements by Id</p>
+<p>contoh menggunakan <b>getElementsById</b> method.</p>
+<p id="demo"></p>
+
+<p>HTML Elements by Tag Name.</p>
+<p>contoh menggunakan <b>getElementsByTagName</b> method.</p>
+<p id="demo1"></p>
+
+<p>Finding HTML Elements by Class Name.</p>
+<p class="intro2">Hello World!</p>
+<p class="intro2">contoh menggunakan <b>getElementsByClassName</b> method.</p>
+<p id="demo2"></p>
+
+<p>Finding HTML Elements by Query Selector</p>
+<p class="intro3">Hello World!.</p>
+<p class="intro3">This example demonstrates the <b>querySelectorAll</b> method.</p>
+<p id="demo3"></p>
+
+<script>
+const element = document.getElementById("intro");
+document.getElementById("demo").innerHTML = 
+"The text from the intro paragraph is: " + element.innerHTML;
+
+const element = document.getElementsByTagName("p");
+document.getElementById("demo1").innerHTML = 'The text in first paragraph (index 0) is: ' + element[0].innerHTML;
+
+const x = document.getElementsByClassName("intro2");
+document.getElementById("demo").innerHTML = 
+'The first paragraph (index 0) with class="intro2" is: ' + x[0].innerHTML;
+
+const x = document.querySelectorAll("p.intro3");
+document.getElementById("demo").innerHTML = 
+'The first paragraph (index 0) with class="intro3" is: ' + x[0].innerHTML;
+</script>
+
+
+</body>
+</html>
